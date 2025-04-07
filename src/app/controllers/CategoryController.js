@@ -20,20 +20,13 @@ class CategoryController {
   async store(request, response) {
  
     const { name } = request.body[0]
-    console.log(name)
+
     if(!name) {
       return response.status(400).json({error: 'Name is required'});
     }
 
-    // const categoryExists = await CategoryRepository.findByName(name);
-
-    // if(categoryExists) {
-    //   return response.status(400).json({error: ' This category exists'});
-    // }
-
     const category = await CategoryRepository.create({name})
-    response.send(category);
-
+    response.status(201).send(category);
   }
 
   async update(request, response) {

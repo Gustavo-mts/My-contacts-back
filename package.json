@@ -1,12 +1,12 @@
 {
-  "name": "usandoExpress",
+  "name": "my-contacts api",
   "version": "1.0.0",
   "description": "projeto onde irei aprender",
   "main": "src/index.js",
   "author": "Yuri Oliveira",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "sudo docker start my-contact-container && nodemon src/index.js",
     "postinstall": "ls"
   },
   "dependencies": {

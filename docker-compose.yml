@@ -1,0 +1,11 @@
+
+services:
+  app:
+    image: my-contact-db
+    container_name: my-contact-container
+    ports:
+      - '5432:5432'
+    volumes:
+      - .:/app
+    command: nodemon src/index.js
+    restart: unless-stopped
