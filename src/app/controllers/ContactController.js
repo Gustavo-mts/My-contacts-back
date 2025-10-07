@@ -1,5 +1,5 @@
 const ContactsRepository = require('../repositories/ContactsRepository');
-const isValidUUID = require('../utils/isValidUUID');
+const isValidUUID = require('../utils/isValidUUID​');
 
 class ContactController {
 
