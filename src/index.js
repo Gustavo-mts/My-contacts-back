@@ -1,6 +1,6 @@
 const express = require('express');
 
-const routes = require('./routes');    //importando o arquivo
+const routes = require('./routes');
 const errorHandler = require('./app/middlewares/errorHandler');
 const cors = require('./app/middlewares/cors');
 
