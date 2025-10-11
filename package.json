@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "projeto onde irei aprender",
   "main": "src/index.js",
-  "author": "Yuri Oliveira",
+  "author": "Gustavo Martins",
   "license": "MIT",
   "scripts": {
     "dev": "sudo docker start my-contact-container && nodemon src/index.js",
